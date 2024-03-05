@@ -3,9 +3,9 @@ export default function taskBlock(trueOrFalse) {
     let task2 = true;
   
     if (trueOrFalse) {
-        task = true;
-        task2 = false;
+        let task = true;  // Reassigning the existing block-scoped variable
+        let task2 = false; // Reassigning the existing block-scoped variable
     }
   
     return [task, task2];
-  }
+}
