@@ -2,7 +2,7 @@ import signUpUser from './4-user-promise';
 import uploadPhoto from './5-photo-reject';
 
 const handleProfileSignup = (firstName, lastName, fileName) => {
-  const userPromise = signUpUser(fileName, lastName);
+  const userPromise = signUpUser(firstName, lastName);
   const photoPromise = uploadPhoto(fileName);
 
   // Using Promise.allSettled to handle both promises
