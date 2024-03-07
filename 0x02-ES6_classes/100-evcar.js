@@ -7,7 +7,7 @@ class EVCar extends Car {
   }
 
   // Override the cloneCar method
-  cloneCar() {
+  static cloneCar() {
     // Create a new instance of the parent class (Car)
     // eslint-disable-next-line class-methods-use-this
     return new Car();
